@@ -56,6 +56,8 @@ public class SeleniumTestClass {
 		//driver.findElement(By.xpath("//input[@id='login']")).click();
 		
 		assertEquals("ABC", driver.findElement(By.xpath("//div[@id='WelcomeContent']/div/span")).getText());
+		
+		assertEquals("Sign Out", driver.findElement(By.xpath("//div[@id='MenuContent']/a[position()=2]")).getText());
 	}
 
 	@After
